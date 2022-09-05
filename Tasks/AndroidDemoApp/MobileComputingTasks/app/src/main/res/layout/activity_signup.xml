@@ -6,4 +6,142 @@
     android:layout_height="match_parent"
     tools:context=".SignupActivity">
 
+    <TextView
+        android:id="@+id/signUPText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/userName"/>
+
+    <EditText
+        android:id="@+id/userName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="67dp"
+        android:layout_marginEnd="67dp"
+        android:hint="USERNAME"
+        android:paddingStart="21dp"
+        android:paddingEnd="21dp"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:layout_marginBottom="7dp"
+        app:layout_constraintBottom_toTopOf="@id/guideline1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4" />
+
+
+    <EditText
+        android:id="@+id/userEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="67dp"
+        android:layout_marginEnd="67dp"
+        android:hint="EMAIL"
+        android:paddingStart="21dp"
+        android:paddingEnd="43dp"
+        android:inputType="text"
+        android:minHeight="48dp"
+        app:layout_constraintTop_toBottomOf="@id/guideline1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <EditText
+        android:id="@+id/userPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="67dp"
+        android:layout_marginEnd="67dp"
+        android:hint="PASSWORD"
+        android:paddingStart="21dp"
+        android:paddingEnd="43dp"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintTop_toBottomOf="@id/userEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/show_pass_btn"
+        android:layout_width="38dp"
+        android:layout_height="41dp"
+        android:layout_marginRight="7dp"
+        android:padding="7dp"
+        android:clickable="true"
+        android:src="@drawable/ic_baseline_visibility_24"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@id/userPass"
+        app:layout_constraintRight_toRightOf="@id/userPass"
+        app:layout_constraintTop_toTopOf="@id/userPass" />
+
+
+    <ImageView
+        android:id="@+id/hide_pass_btn"
+        android:layout_width="38dp"
+        android:layout_height="41dp"
+        android:layout_marginRight="7dp"
+        android:padding="7dp"
+        android:clickable="true"
+        android:src="@drawable/ic_baseline_visibility_off_24"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/userPass"
+        app:layout_constraintRight_toRightOf="@id/userPass"
+        app:layout_constraintTop_toTopOf="@id/userPass" />
+
+
+    <TextView
+        android:id="@+id/signUp"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginEnd="67dp"
+        android:gravity="center"
+        android:text="Sign In"
+        android:clickable="true"
+        android:textSize="21sp"
+        android:background="@drawable/submit_text_background"
+        app:layout_constraintTop_toBottomOf="@id/userPass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+
+    <TextView
+        android:id="@+id/signInText"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:gravity="center"
+        android:text="Already have an account! "
+        android:layout_marginBottom="21dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/signIn"/>
+
+    <TextView
+        android:id="@+id/signIn"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:layout_marginEnd="37dp"
+        android:gravity="center"
+        android:text="Sign In"
+        android:textColor="#0596DA"
+        android:clickable="true"
+        android:layout_marginBottom="21dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -20,6 +20,7 @@ class LoginActivity : AppCompatActivity() {
         val hidePass: ImageView = findViewById(R.id.hide_pass_btn)
         val password:EditText = findViewById(R.id.userPass)
         val skip:TextView = findViewById(R.id.skip)
+        val createAccount:TextView = findViewById(R.id.signUp)
 
         showPass.setOnClickListener {
             showPass.visibility = View.GONE
@@ -34,8 +35,17 @@ class LoginActivity : AppCompatActivity() {
         }
 
         skip.setOnClickListener {
-            val message = "New Activity"
+            val message = ""
             val intent = Intent(this, MainActivity::class.java).apply {
+                putExtra(EXTRA_MESSAGE, message)
+            }
+            startActivity(intent)
+            finish()
+        }
+
+        createAccount.setOnClickListener {
+            val message = ""
+            val intent = Intent(this, SignupActivity::class.java).apply {
                 putExtra(EXTRA_MESSAGE, message)
             }
             startActivity(intent)
