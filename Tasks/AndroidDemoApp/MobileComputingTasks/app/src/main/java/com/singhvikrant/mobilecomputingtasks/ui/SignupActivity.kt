@@ -1,4 +1,4 @@
-package com.singhvikrant.mobilecomputingtasks
+package com.singhvikrant.mobilecomputingtasks.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -10,6 +10,7 @@ import android.view.View
 import android.widget.EditText
 import android.widget.ImageView
 import android.widget.TextView
+import com.singhvikrant.mobilecomputingtasks.R
 
 class SignupActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

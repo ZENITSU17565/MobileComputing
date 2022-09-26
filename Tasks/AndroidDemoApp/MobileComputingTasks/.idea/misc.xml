@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/TCET/T.E/SEM 5/MC_GIT/MobileComputing/Tasks/AndroidDemoApp/MobileComputingTasks/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.3675" />
+        <entry key="..\:/TCET/T.E/SEM 5/MC_GIT/MobileComputing/Tasks/AndroidDemoApp/MobileComputingTasks/app/src/main/res/drawable/ic_baseline_date_range_24.xml" value="0.3675" />
         <entry key="..\:/TCET/T.E/SEM 5/MC_GIT/MobileComputing/Tasks/AndroidDemoApp/MobileComputingTasks/app/src/main/res/drawable/ic_baseline_remove_red_eye_24.xml" value="0.3675" />
         <entry key="..\:/TCET/T.E/SEM 5/MC_GIT/MobileComputing/Tasks/AndroidDemoApp/MobileComputingTasks/app/src/main/res/drawable/ic_baseline_visibility_24.xml" value="0.3675" />
         <entry key="..\:/TCET/T.E/SEM 5/MC_GIT/MobileComputing/Tasks/AndroidDemoApp/MobileComputingTasks/app/src/main/res/drawable/ic_baseline_visibility_off_24.xml" value="0.3675" />
@@ -14,6 +15,11 @@
         <entry key="..\:/TCET/T.E/SEM 5/MC_GIT/MobileComputing/Tasks/AndroidDemoApp/MobileComputingTasks/app/src/main/res/layout-w936dp/activity_login.xml" value="0.275" />
         <entry key="..\:/TCET/T.E/SEM 5/MC_GIT/MobileComputing/Tasks/AndroidDemoApp/MobileComputingTasks/app/src/main/res/layout/activity_login.xml" value="0.36666666666666664" />
         <entry key="..\:/TCET/T.E/SEM 5/MC_GIT/MobileComputing/Tasks/AndroidDemoApp/MobileComputingTasks/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/TCET/T.E/SEM 5/MC_GIT/MobileComputing/Tasks/AndroidDemoApp/MobileComputingTasks/app/src/main/res/layout/activity_note.xml" value="0.36666666666666664" />
+        <entry key="..\:/TCET/T.E/SEM 5/MC_GIT/MobileComputing/Tasks/AndroidDemoApp/MobileComputingTasks/app/src/main/res/layout/activity_note_description.xml" value="0.36666666666666664" />
+        <entry key="..\:/TCET/T.E/SEM 5/MC_GIT/MobileComputing/Tasks/AndroidDemoApp/MobileComputingTasks/app/src/main/res/layout/activity_notes.xml" value="0.36666666666666664" />
+        <entry key="..\:/TCET/T.E/SEM 5/MC_GIT/MobileComputing/Tasks/AndroidDemoApp/MobileComputingTasks/app/src/main/res/layout/activity_notes_recycler.xml" value="0.36666666666666664" />
+        <entry key="..\:/TCET/T.E/SEM 5/MC_GIT/MobileComputing/Tasks/AndroidDemoApp/MobileComputingTasks/app/src/main/res/layout/activity_notes_recycler2.xml" value="0.18802083333333333" />
         <entry key="..\:/TCET/T.E/SEM 5/MC_GIT/MobileComputing/Tasks/AndroidDemoApp/MobileComputingTasks/app/src/main/res/layout/activity_signup.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/vsingh/AndroidStudioProjects/MobileComputingTasks/app/src/main/res/layout/activity_main.xml" value="0.35260416666666666" />
       </map>
