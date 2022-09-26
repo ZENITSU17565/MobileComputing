@@ -13,12 +13,15 @@ import com.singhvikrant.mobilecomputingtasks.ui.MainActivity
 
 class NoteNotification: BroadcastReceiver(){
 
-    private val channelId = "remindMe"
-    private val notificationId = 256
+//    private val channelId = "remindMe"
+//    private val notificationId = 256
+
+    private val channelId = "remindMeNote"
+    private val notificationId = 123
 
     override fun onReceive(context: Context, intent: Intent) {
 
-
+        println("Notifications")
 
         val bundle = intent.getBundleExtra("bundle")
 

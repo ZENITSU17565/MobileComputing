@@ -25,7 +25,6 @@ class MainActivity : AppCompatActivity(), INotesAdapter{
         notesRecyclerView.layoutManager = StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
 
 
-//        val adapter = NotesAdapter(this, this)
         val adapter = NotesAdapter(this, this)
         notesRecyclerView.adapter = adapter
 

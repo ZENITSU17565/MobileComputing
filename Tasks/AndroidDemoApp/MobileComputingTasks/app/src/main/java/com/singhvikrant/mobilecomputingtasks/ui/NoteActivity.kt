@@ -10,8 +10,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textfield.TextInputLayout
-import com.singhvikrant.mobilecomputingtasks.R
 import com.singhvikrant.mobilecomputingtasks.dateTime.DateTime
+import com.singhvikrant.mobilecomputingtasks.R
 import com.singhvikrant.mobilecomputingtasks.notification.NoteNotification
 import com.singhvikrant.mobilecomputingtasks.notification.SetAlarm
 import com.singhvikrant.mobilecomputingtasks.roomDatabase.NoteEntity
@@ -23,8 +23,8 @@ import java.util.*
 class NoteActivity : AppCompatActivity() {
 
     private lateinit var viewModel: NoteViewModel
-    private val channelId = "remindMe"
-    private val notificationId = 256
+    private val channelId = "remindMeNote"
+    private val notificationId = 123
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -86,7 +86,7 @@ class NoteActivity : AppCompatActivity() {
                 println("noteEntity $noteEntity")
 
 
-                val pendingIntent = PendingIntent.getBroadcast(this, dateTimeToMs.toInt(), intent,PendingIntent.FLAG_CANCEL_CURRENT)
+                val pendingIntent = PendingIntent.getBroadcast(this, dateTimeToMs.toInt(), intent,PendingIntent.FLAG_UPDATE_CURRENT)
 
                 SetAlarm(dateTimeToMs, pendingIntent, alarmManager)
 
