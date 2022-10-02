@@ -14,6 +14,12 @@
         android:theme="@style/Theme.MobileComputingTasks"
         tools:targetApi="31">
         <activity
+            android:name=".ui.ContactUsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.AboutUsActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.NoteDescriptionActivity"
             android:exported="false" />
         <activity
@@ -36,8 +42,6 @@
         </activity>
 
         <receiver android:name=".notification.NoteNotification" />
-
-
     </application>
 
 </manifest>
