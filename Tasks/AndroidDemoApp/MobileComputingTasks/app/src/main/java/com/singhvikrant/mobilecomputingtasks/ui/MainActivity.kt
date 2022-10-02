@@ -3,6 +3,9 @@ package com.singhvikrant.mobilecomputingtasks.ui
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
+import android.view.Menu
+import android.view.MenuItem
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.RecyclerView
@@ -52,6 +55,41 @@ class MainActivity : AppCompatActivity(), INotesAdapter{
         intent.putExtra("dateTime", note.dateTime)
         intent.putExtra("noteEntity", note)
         startActivity(intent)
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        menuInflater.inflate(R.menu.main_menu, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        // Handle item selection
+        Log.i("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!","working")
+        return when (item.itemId) {
+            R.id.action_about -> {
+                startAbout()
+                true
+            }
+            R.id.action_contact -> {
+                startContact()
+                true
+            }
+            R.id.action_feedback -> {
+                startFeedback()
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
+        }
+    }
+
+    fun startAbout(){
+        Log.i("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!","start")
+    }
+    fun startContact(){
+        Log.i("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!","contact")
+    }
+    fun startFeedback(){
+        Log.i("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!","feedback")
     }
 
 }
