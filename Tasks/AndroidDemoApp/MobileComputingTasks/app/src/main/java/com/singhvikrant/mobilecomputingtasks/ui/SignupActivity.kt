@@ -13,6 +13,13 @@ import android.widget.TextView
 import com.singhvikrant.mobilecomputingtasks.R
 
 class SignupActivity : AppCompatActivity() {
+
+    var inputUser:EditText = findViewById(R.id.userName)
+    var inputEmail:EditText = findViewById(R.id.userEmail)
+    var inputpass:EditText = findViewById(R.id.userPass)
+
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_signup)
@@ -44,6 +51,17 @@ class SignupActivity : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
+
+
+
+
+
+        /////////////////////////////////////////////// Firebase Auth ///////////////////////////////////////////////
+
+
+
+
+
 
     }
 }

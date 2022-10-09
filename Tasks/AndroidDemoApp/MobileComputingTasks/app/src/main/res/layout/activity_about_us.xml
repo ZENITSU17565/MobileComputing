@@ -1,12 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.AboutUsActivity">
 
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/aboutTitle1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:text="About Us"
+        android:textSize="50sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
-  </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/aboutPara1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:text="Our note making app is the best way to keep track of your notes and ideas. With our app, you can easily create and manage your notes, and share them with others. We've designed our app to be simple and easy to use, so you can focus on your ideas, and not on the app. With our app, you can:\n\n
+      - Create and manage your notes\n
+      - Share your notes with others\n
+      - Sync your notes across devices\n
+      - Access your notes offline\n
+      - And more!
+      \n\nOur app is perfect for students, professionals, busy moms, and anyone who wants to be more organized and productive. With our app, you can finally keep all of your notes in one place and access them from anywhere. So try our note making app today and see how it can help you be more organized and productive!
+"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/aboutTitle1" />
+
+
+    <TextView
+        android:id="@+id/aboutPara2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="12dp"
+        android:text="The about us page helps online retailers develop a relationship with customers and build trust by putting a face and a story to the name on the storefront. About us pages serve much the same purpose for retailers who sell less-common or unique items as well.
+This page is your opportunity to introduce yourself to your potential customers. Use this precious piece of website real estate to establish credibility and build trust. Unless you are a large, well-known company, a visitor to your site may not know anything about you.
+The primary purpose of an about us page is to inform the reader about the company and its operations. This is a straightforward goal that nearly all businesses have to fulfill in some fashion or another."
+        android:textSize="15sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/aboutPara1" />
+  </LinearLayout>
+</ScrollView>

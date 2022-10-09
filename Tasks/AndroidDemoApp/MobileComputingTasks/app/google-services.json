@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "962925112600",
+    "project_id": "mobile-computing-tasks",
+    "storage_bucket": "mobile-computing-tasks.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:962925112600:android:041106cd8131d8e107c26d",
+        "android_client_info": {
+          "package_name": "com.singhvikrant.mobilecomputingtasks"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "962925112600-p1j8h2b7pi4q2qpjqv2d8qnlu3ijv5c0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8WvomAyY_ECapB4qDyi9dLfn_W1oCsLc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "962925112600-p1j8h2b7pi4q2qpjqv2d8qnlu3ijv5c0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

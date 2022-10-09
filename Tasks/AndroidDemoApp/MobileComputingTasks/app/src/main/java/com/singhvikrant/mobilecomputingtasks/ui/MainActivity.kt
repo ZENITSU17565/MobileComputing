@@ -1,11 +1,15 @@
 package com.singhvikrant.mobilecomputingtasks.ui
 
+import android.app.Activity
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
+import android.net.Uri
 import android.os.Bundle
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
+import androidx.appcompat.app.AppCompatActivity
+import androidx.browser.customtabs.CustomTabsIntent
+import androidx.core.content.ContextCompat
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.RecyclerView
@@ -16,6 +20,7 @@ import com.singhvikrant.mobilecomputingtasks.adapter.INotesAdapter
 import com.singhvikrant.mobilecomputingtasks.adapter.NotesAdapter
 import com.singhvikrant.mobilecomputingtasks.roomDatabase.NoteEntity
 import com.singhvikrant.mobilecomputingtasks.roomDatabase.NoteViewModel
+
 
 class MainActivity : AppCompatActivity(), INotesAdapter{
     private lateinit var viewModel: NoteViewModel
@@ -84,12 +89,60 @@ class MainActivity : AppCompatActivity(), INotesAdapter{
 
     fun startAbout(){
         Log.i("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!","start")
+        val intent = Intent(this, AboutUsActivity::class.java)
+        startActivity(intent)
     }
     fun startContact(){
         Log.i("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!","contact")
+        val intent = Intent(this, ContactUsActivity::class.java)
+        startActivity(intent)
     }
     fun startFeedback(){
         Log.i("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!","feedback")
+
+        val url = "https://docs.google.com/forms/d/e/1FAIpQLSdKh6W-CfBkaJ-DPKpgoUzN_Dqu5_iDkwi0CMK7jsbRaWNdYg/viewform"
+
+
+        // initializing object for custom chrome tabs.
+        val customIntent: CustomTabsIntent.Builder = CustomTabsIntent.Builder()
+
+        // below line is setting toolbar color
+        // for our custom chrome tab.
+
+        // below line is setting toolbar color
+        // for our custom chrome tab.
+        customIntent.setToolbarColor(ContextCompat.getColor(this@MainActivity, R.color.purple_200))
+
+        // we are calling below method after
+        // setting our toolbar color.
+
+        // we are calling below method after
+        // setting our toolbar color.
+        openCustomTab(this@MainActivity, customIntent.build(), Uri.parse(url))
+    }
+
+    fun openCustomTab(activity: Activity, customTabsIntent: CustomTabsIntent, uri: Uri?) {
+        // package name is the default package
+        // for our custom chrome tab
+        val packageName = "com.android.chrome"
+        if (packageName != null) {
+
+            // we are checking if the package name is not null
+            // if package name is not null then we are calling
+            // that custom chrome tab with intent by passing its
+            // package name.
+            customTabsIntent.intent.setPackage(packageName)
+
+            // in that custom tab intent we are passing
+            // our url which we have to browse.
+            if (uri != null) {
+                customTabsIntent.launchUrl(activity, uri)
+            }
+        } else {
+            // if the custom tabs fails to load then we are simply
+            // redirecting our user to users device default browser.
+            activity.startActivity(Intent(Intent.ACTION_VIEW, uri))
+        }
     }
 
 }
